@@ -1,8 +1,10 @@
-
+import Img1 from "../assets/Img1.png"
 
 function Home() {
   return (
-    <div>Home</div>
+    <>
+    <img src={Img1} />
+    </>
   )
 }
 
