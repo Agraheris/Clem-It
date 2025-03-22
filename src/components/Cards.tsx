@@ -1,15 +1,27 @@
-import Test from "../assets/nuage.png"
-
-const Cards: React.FC = () => {
-  return (
-    <div>
-        <img src={Test} alt="" />
-        <div className="Text">
-            <h2>Titre</h2>
-            <p> Nulla maximus cursus lectus vitae facilisis. Aliquam erat volutpat. Curabitur id tincidunt purus. Pellentesque tempor interdum neque, ut ultrices nisi hendrerit sed. Sed varius ac libero quis egestas. Integer vitae felis nec risus egestas aliquam vitae ut erat. Duis vel diam leo</p>
-        </div>
-    </div>
-  )
+interface Item {
+  title: string;
+  description: string;
+  image: string;
 }
 
-export default Cards
+interface CardsProps {
+  items: Item[];
+}
+
+const Cards: React.FC<CardsProps> = ({ items }) => {
+  return (
+    <div className="cards-container">
+      {items.map((item, index) => (
+        <div key={index} className="card">
+          <img src={item.image} alt={item.title} />
+          <div className="text">
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Cards;
