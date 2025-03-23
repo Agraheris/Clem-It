@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Cards from "./Cards";
 import Test from "../assets/nuage.png";
 
@@ -41,6 +42,14 @@ const Who: React.FC = () => {
     },
   ];
 
+  const [visibleProjects, setVisibleProjects] = useState(2);
+
+  const handleShowMore = () => {
+    setVisibleProjects((prev) => prev + 2);
+  };
+
+  const hasMore = visibleProjects < projects.length;
+
   return (
     <>
       <div className="max-w-5xl mx-auto px-4 py-16 text-center">
@@ -73,14 +82,19 @@ const Who: React.FC = () => {
       </div>
 
       <div className="px-4">
-        <Cards items={projects} />
+        <Cards items={projects.slice(0, visibleProjects)} />
       </div>
 
-      <div className="flex justify-center mt-10">
-        <button className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg">
-          En voir plus
-        </button>
-      </div>
+      {hasMore && (
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={handleShowMore}
+            className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg"
+          >
+            En voir plus
+          </button>
+        </div>
+      )}
     </>
   );
 };

@@ -6,26 +6,25 @@ interface Item {
 
 interface CardsProps {
   items: Item[];
+  onCardClick?: (title: string) => void;
 }
 
-const Cards: React.FC<CardsProps> = ({ items }) => {
+const Cards: React.FC<CardsProps> = ({ items, onCardClick }) => {
   return (
-    <div className="space-y-6 max-w-6xl mx-auto px-4 py-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 px-4 max-w-6xl mx-auto">
       {items.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          onClick={() => onCardClick?.(item.title)}
+          className={`cursor-pointer bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition`}
         >
           <img
             src={item.image}
             alt={item.title}
-            className="w-full md:w-1/3 h-64 object-cover"
+            className="w-full h-40 object-cover rounded-md mb-4"
           />
-
-          <div className="p-6 flex flex-col justify-center md:w-2/3">
-            <h2 className="text-2xl font-bold text-gray-800 mb-2">{item.title}</h2>
-            <p className="text-gray-600 text-sm md:text-base">{item.description}</p>
-          </div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+          <p className="text-gray-600">{item.description}</p>
         </div>
       ))}
     </div>
