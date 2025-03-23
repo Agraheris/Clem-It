@@ -37,20 +37,31 @@ function Service() {
 
   return (
     <>
-      <section>
-        <h2>🚀 Des solutions web adaptées à vos besoins</h2>
-        <p>
-          Vous avez un projet web en tête ? Que ce soit pour une{" "}
-          <strong>présence en ligne impactante</strong>, une{" "}
-          <strong>boutique e-commerce performante</strong> ou une{" "}
-          <strong>application sur-mesure</strong>, je conçois des solutions
-          adaptées à vos objectifs. Mon approche repose sur la{" "}
-          <strong>personnalisation et l’accessibilité</strong>, pour garantir une
-          expérience utilisateur optimale à tous.
-        </p>
-        <p>👉 Découvrez mes services et trouvons ensemble la solution qui vous correspond.</p>
+      <section className="max-w-5xl mx-auto px-4 py-16 text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900">
+          🚀 Des solutions web adaptées à vos besoins
+        </h2>
+        <div className="space-y-4 text-base md:text-lg text-gray-600 text-left max-w-3xl mx-auto">
+          <p>
+            Vous avez un projet web en tête ? Que ce soit pour une{" "}
+            <strong className="font-semibold text-gray-800">présence en ligne impactante</strong>, une{" "}
+            <strong className="font-semibold text-gray-800">boutique e-commerce performante</strong> ou une{" "}
+            <strong className="font-semibold text-gray-800">application sur-mesure</strong>, je conçois des solutions
+            adaptées à vos objectifs.
+          </p>
+          <p>
+            Mon approche repose sur la{" "}
+            <strong className="font-semibold text-gray-800">personnalisation</strong> et{" "}
+            <strong className="font-semibold text-gray-800">l’accessibilité</strong>, pour garantir une
+            expérience utilisateur optimale à tous.
+          </p>
+          <p className="pt-2 text-gray-800 font-medium text-lg">👉 Découvrez mes services et trouvons ensemble la solution qui vous correspond.</p>
+        </div>
       </section>
-      <Cards items={services} />  {/* Utilisation du même composant pour 'services' */}
+
+      <div className="px-4">
+        <Cards items={services} />
+      </div>
     </>
   );
 }
