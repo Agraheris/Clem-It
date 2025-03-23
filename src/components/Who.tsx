@@ -44,7 +44,7 @@ const Who: React.FC = () => {
   return (
     <>
       <div>
-        <h2>Vigouroux Clément – Développeur Technique & Créatif</h2>
+        <h2 className="text-6xl font-bold mb-6 text-center">Vigouroux Clément – Développeur Technique & Créatif</h2>
         <p>
           Transformer des idées en solutions : Développeur web créatif et engagé
         </p>
