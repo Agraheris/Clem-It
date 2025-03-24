@@ -11,16 +11,19 @@ function Service({ onOpenContact }: ServiceProps) {
       title: "Site Vitrine",
       description: "Boostez votre présence en ligne avec un site sur-mesure, rapide et accessible.",
       image: Test,
+      tarif : 100,
     },
     {
       title: "E-commerce",
       description: "Vendez en ligne avec une boutique optimisée pour l'expérience utilisateur et la conversion.",
       image: Test,
+      tarif : 100,
     },
     {
       title: "Application Web",
       description: "Une solution unique et performante adaptée aux besoins spécifiques de votre projet.",
       image: Test,
+      tarif : 100,
     },
     {
       title: "Demande de Devis",

@@ -2,6 +2,7 @@ interface Item {
   title: string;
   description: string;
   image: string;
+  tarif?: number;
 }
 
 interface CardsProps {
@@ -25,6 +26,7 @@ const Cards: React.FC<CardsProps> = ({ items, onCardClick }) => {
           />
           <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
           <p className="text-gray-600">{item.description}</p>
+          {item.tarif !== undefined ? <p>A partir de {item.tarif} €</p> : null}
         </div>
       ))}
     </div>

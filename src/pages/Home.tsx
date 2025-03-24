@@ -20,7 +20,26 @@ function Home() {
       />
 
       <section className="relative z-10">
-        <img src={Img1} alt="header" className="w-full h-auto" />
+      <div
+  className="relative w-full bg-cover bg-center h-[30vh] md:h-[40vh] flex items-center justify-center"
+  style={{ backgroundImage: `url(${Img1})` }}
+>
+
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  <div className="relative text-center px-4 z-10">
+    <h1 className="text-3xl md:text-5xl lg:text-9xl font-extrabold text-white drop-shadow-md">
+      Clément Vigouroux
+    </h1>
+    <h2 className="text-2xl md:text-4xl lg:text-8xl font-bold text-white drop-shadow-md">
+      Développeur Web
+    </h2>
+    <h3 className="text-xl md:text-3xl lg:text-7xl font-semibold text-white drop-shadow-md">
+      Indépendant
+    </h3>
+  </div>
+</div>
+        
         <Who />
         <Service onOpenContact={handleOpenContact} />
       </section>
