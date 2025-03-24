@@ -24,7 +24,7 @@ const Who: React.FC = () => {
         ✨ Transformer vos idées en solutions ✨
       </p>
 
-      <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center md:text-left">
+      <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">
         Des solutions digitales qui vous ressemblent
       </h3>
       <p className="text-base md:text-lg leading-relaxed">
