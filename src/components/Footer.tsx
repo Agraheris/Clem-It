@@ -6,6 +6,8 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         <p className="text-center text-sm md:text-left">
           © {new Date().getFullYear()} Vigouroux Clément — Tous droits réservés.
+          <br/>
+          Siret 94111475300010
         </p>
         <div className="flex gap-6 text-2xl">
           <a
