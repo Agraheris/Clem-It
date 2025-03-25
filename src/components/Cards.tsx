@@ -29,7 +29,7 @@ const Cards: React.FC<CardsProps> = ({ items, onCardClick }) => {
           />
         )}
       
-        <div className="w-full md:flex-1 md:pr-4 text-center md:text-left pl-20">
+        <div className="w-full md:flex-1 md:pr-4 text-center md:text-left md:pl-20">
           <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
           <p className="text-gray-600 mb-2">{item.description}</p>
           {item.tarif !== undefined && (
