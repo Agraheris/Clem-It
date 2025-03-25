@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Img1 from "../assets/Img1.png";
-import background from "../assets/background.png";
+import Img1 from "../assets/Img1.webp";
+import background from "../assets/background.webp";
 import Service from "../components/Service";
 import Who from "../components/Who";
 import Contact from "../components/Contact";
@@ -21,7 +21,7 @@ function Home() {
 
       <section className="relative z-10">
       <div
-  className="relative w-full bg-cover bg-center h-[30vh] md:h-[40vh] flex items-center justify-center"
+  className="relative w-full bg-cover bg-center flex items-center justify-center"
   style={{ backgroundImage: `url(${Img1})` }}
 >
 
@@ -34,7 +34,7 @@ function Home() {
     <h2 className="text-2xl md:text-4xl lg:text-8xl font-bold text-white drop-shadow-md">
       Développeur Web
     </h2>
-    <h3 className="text-xl md:text-3xl lg:text-7xl font-semibold text-white drop-shadow-md">
+    <h3 className="text-xl md:text-3xl lg:text-7xl font-semibold text-white drop-shadow-md pb-5">
       Indépendant
     </h3>
   </div>

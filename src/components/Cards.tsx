@@ -17,6 +17,8 @@ const Cards: React.FC<CardsProps> = ({ items, onCardClick }) => {
         <div
         key={index}
         onClick={() => onCardClick?.(item.title)}
+        role="button"
+        aria-label="Ouvrir le formulaire de contact"
         className="cursor-pointer bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col md:flex-row items-center gap-6"
       >
         {item.image && (
