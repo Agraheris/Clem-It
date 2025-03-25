@@ -53,11 +53,8 @@ function Service({ onOpenContact }: ServiceProps) {
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900">
           🚀 Des solutions web adaptées à vos besoins
         </h2>
-        <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto text-left">
-          Vous avez un projet web en tête ? Je conçois des solutions sur mesure...
-        </p>
-        <p className="text-base md:text-lg text-gray-600 font-semibold max-w-3xl mx-auto text-left">
-        Chaque projet est unique, un devis personnalisé est réalisé en fonction de vos besoins spécifiques.
+        <p className="text-base md:text-lg text-gray-600 font-semibold max-w-3xl mx-auto text-center">
+        Chaque vision est unique, un devis personnalisé sera réalisé.
         </p>
 
       </section>

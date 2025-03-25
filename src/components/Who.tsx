@@ -14,7 +14,7 @@ const Who: React.FC = () => {
       <p className="text-base md:text-lg leading-relaxed mb-6">
         Passionné par le code et les défis créatifs, j’ai fait de ma passion mon métier.
         Titulaire d’un titre professionnel en développement web et mobile, j’allie expertise technique
-        et approche innovante pour donner vie à vos projets. Autodidacte et toujours en quête de nouvelles solutions,
+        et approche innovante pour donner vie à vos besoins. Autodidacte et toujours en quête de nouvelles solutions,
         je transforme vos idées en applications performantes et intuitives. <br />
         <strong className="font-semibold text-600">Vous avez un projet ?</strong> Je le rends concret,
         efficace et à votre image.
@@ -25,7 +25,7 @@ const Who: React.FC = () => {
       </p>
 
       <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-        Des solutions digitales qui vous ressemblent
+        Des solutions numériques qui vous ressemblent
       </h3>
       <p className="text-base md:text-lg leading-relaxed">
         Un site web ou une application, ce n’est pas juste du code, c’est un outil stratégique.
@@ -38,7 +38,7 @@ const Who: React.FC = () => {
         inclusives et impactantes.
         <br />
         <br />
-        <strong className="font-semibold text-600">Vous avez un projet ?</strong> Je le transforme en une solution
+        <strong className="font-semibold text-600">Un concept à développer ?</strong> Je le transforme en une solution
         efficace et innovante, adaptée à vos besoins.
       </p>
     </section>
