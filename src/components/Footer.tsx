@@ -43,7 +43,7 @@ function Footer() {
           className="hover:text-gray-400 transition"
           >
           <FaGithub />
-</a>
+          </a>
         </div>
       </div>
     </footer>
