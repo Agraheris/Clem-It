@@ -1,4 +1,4 @@
-import { FaLinkedin, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTiktok, FaGithub } from "react-icons/fa";
 import Logo from "../../public/assets/Logo.webp"
 
 function Footer() {
@@ -36,6 +36,14 @@ function Footer() {
           >
             <FaTiktok />
           </a>
+          <a
+          href="https://github.com/Agraheris"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-400 transition"
+          >
+          <FaGithub />
+</a>
         </div>
       </div>
     </footer>
