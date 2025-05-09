@@ -41,7 +41,7 @@ function Home() {
 </div>
         
         <Who />
-        <Service onOpenContact={handleOpenContact} />
+        <Service />
       </section>
 
       <button
