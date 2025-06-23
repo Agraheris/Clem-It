@@ -77,7 +77,7 @@ function Service() {
 
   return (
     <>
-      <section className="text-center max-w-5xl mx-auto px-4 py-16">
+      <section id="offres" className="text-center max-w-5xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold mb-6">
           🚀 Des solutions web adaptées à vos besoins
         </h2>
