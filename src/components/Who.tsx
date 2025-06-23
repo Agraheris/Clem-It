@@ -2,10 +2,10 @@ const Who: React.FC = () => {
 
   return (
     <>
-      {/* Menu Sticky Horizontal */}
+
       <nav className="sticky top-0 bg-white/95 backdrop-blur-sm shadow-md z-50 border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-2 py-2">
-          {/* Menu Mobile - 2 lignes */}
+
           <div className="block md:hidden">
             <div className="flex flex-col gap-2">
               <ul className="flex justify-center gap-4 text-sm font-medium">
@@ -51,19 +51,11 @@ const Who: React.FC = () => {
                     Offres
                   </a>
                 </li>
-                <li>
-                  <a 
-                    href="#contact" 
-                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 px-3 py-2 rounded-md hover:bg-blue-50 whitespace-nowrap min-h-[44px] flex items-center"
-                  >
-                    Contact
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
 
-          {/* Menu Desktop - 1 ligne */}
+
           <ul className="hidden md:flex justify-center gap-6 text-base font-medium">
             <li>
               <a 
