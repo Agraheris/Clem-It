@@ -153,7 +153,7 @@ const Who: React.FC = () => {
               <h4 className="text-xl font-semibold mb-3">Formation intensive développement web</h4>
               <p className="text-base leading-relaxed">
                 <strong>Wild Code School</strong> - 2024<br />
-                Formation de 8 mois en développement web full-stack, spécialisation JavaScript, React, Node.js
+                Formation de 5 mois en développement web full-stack, spécialisation JavaScript, React, Node.js
               </p>
             </div>
             
@@ -179,7 +179,7 @@ const Who: React.FC = () => {
               </div>
               <div>
                 <strong>Outils :</strong><br />
-                Git, Figma, WordPress
+                Git, Figma
               </div>
               <div>
                 <strong>Accessibilité :</strong><br />
